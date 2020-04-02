@@ -1,0 +1,117 @@
+@custom-selector :--links a:link,a:visited,a:hover,a:focus,a:active;
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --calc-screen-font-size: 12vw;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+:--links {
+    color: blue;
+    text-decoration: underline;
+}
+
+:--headings {
+    margin: .75rem 0;
+}
+
+/*
+The following CSS rule changes the font size of all UI
+components that have the btn class name.
+*/
+.btn {
+    font-size: 32;
+    font-weight: bold;
+
+    display:block;
+    /*height: 50px;
+    width: 50px;*/
+    margin: 2px;
+    border-radius: 2px;
+    border: 0px solid black;
+}
+
+.charcoal {
+    background-color: #5a5c5c;
+    color: white;
+}
+
+.darkgrey {
+    background-color: #575757;
+    color: white;
+}
+
+.orange {
+    background-color: #fca00b;
+    color: white;
+}
+
+.silver {
+    background-color: #7b7b7c;
+    color: white;
+}
+
+.submit-button {
+    background-image: 
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><linearGradient id='gradient'><stop offset='10%' stop-color='%23F00'/><stop offset='90%' stop-color='%23fcc'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+}
+
+@font-face {
+  font-family: 'fa-brands-400';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("fonts/fa-brands-400.ttf") format("truetype"), url("fonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+  font-family: 'fa-regular-400';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("fonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+  font-family: 'fa-solid-900';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("fonts/fa-solid-900.ttf") format("truetype"), url("fonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.far {
+    font-family: fa-regular-400;
+    font-weight: 400; 
+}
+
+.fab {
+    font-family: fa-brands-400;
+    font-weight: 400; 
+}
+
+.fas {
+    font-family: fa-solid-900;
+    font-weight: 900; 
+}
