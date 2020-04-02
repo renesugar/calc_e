@@ -1,6 +1,6 @@
 # About
 
-calc_e is a sample calculation application built using Electron.
+calc_e is a sample calculator application built using Electron.
 
 ## Build
 
